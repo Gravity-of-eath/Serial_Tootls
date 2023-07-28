@@ -4,11 +4,10 @@
 #include <QMainWindow>
 
 namespace Ui {
-class MainWindow;
+    class MainWindow;
 }
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
@@ -17,6 +16,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    void resizeEvent(QResizeEvent *event);
 };
 
 #endif // MAINWINDOW_H

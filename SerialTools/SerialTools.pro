@@ -26,16 +26,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    opendialog.cpp \
-    consoletabitem.cpp
+    hometab.cpp
 
 HEADERS += \
         mainwindow.h \
-    opendialog.h \
-    consoletabitem.h
+    hometab.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    hometab.ui
 
 RESOURCES += \
     icon.qrc
