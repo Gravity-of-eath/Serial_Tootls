@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <serialtab.h>
+#include <hometab.h>
 
 namespace Ui {
     class MainWindow;
@@ -16,7 +18,11 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    HomeTab *home;
+    QList<SerialTab *> serials;
     void resizeEvent(QResizeEvent *event);
+public slots:
+    void openNewSerialTab(HomeTab::SerialConfig *sc);
 };
 
 #endif // MAINWINDOW_H

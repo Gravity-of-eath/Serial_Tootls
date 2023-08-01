@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,15 +26,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    hometab.cpp
+    hometab.cpp \
+    serialtab.cpp \
+    console.cpp
 
 HEADERS += \
         mainwindow.h \
-    hometab.h
+    hometab.h \
+    serialtab.h \
+    console.h
 
 FORMS += \
         mainwindow.ui \
-    hometab.ui
+    hometab.ui \
+    serialtab.ui
 
 RESOURCES += \
     icon.qrc
